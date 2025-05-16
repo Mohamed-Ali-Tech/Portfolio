@@ -1,3 +1,18 @@
+  const openMenu = document.getElementById("open-menu");
+  const closeMenu = document.getElementById("close-menu");
+  const navList = document.querySelector(".nav-list ul");
+
+  openMenu.addEventListener("click", () => {
+    navList.style.display = "flex";       
+    openMenu.style.display = "none";      
+    closeMenu.style.display = "block";    
+  });
+
+  closeMenu.addEventListener("click", () => {
+    navList.style.display = "none";       
+    openMenu.style.display = "block";     
+    closeMenu.style.display = "none";     
+  });
 
 var typed1 = new Typed('#types-js', {
     strings: ['Web Devloper.', ' Web Designer.'],
