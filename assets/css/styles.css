@@ -483,7 +483,6 @@ a {
 /* FOOTER END */
 
 /* responsive */
-
 @media (max-width: 1300px) {
   .container {
     max-width: 1000px;
@@ -551,6 +550,14 @@ a {
     max-width: none;
     width: 100%;
   }
+
+  #main {
+    margin-top: 1rem;
+  }
+
+  /* #header .nav-bar {
+    display: none;
+  } */
   #main {
     display: flex;
     flex-direction: column-reverse;
@@ -559,7 +566,7 @@ a {
   }
   #main img {
     margin: 0 1rem;
-    width: 230px;
+    width: 300px;
   }
 
   #main .main-content .head-content h1 {
@@ -578,18 +585,70 @@ a {
     margin-top: 1rem;
   }
 
-  .head {
-    margin-bottom: 2rem;
+  #about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .head h3 {
-    font-weight: 400;
+  #about .about-content .image {
+    width: 300px;
+    height: 300px;
+  }
+  #about .about-content .details .my-path .experience,
+  #about .about-content .details .my-path .education {
+    width: 80%;
+    margin: auto;
   }
 
-  .head h1 {
-    font-weight: 600;
-    font-size: 60px;
+  #about .about-content .details .description {
+    width: 80%;
+    margin: 20px auto 0;
+    text-align: center;
   }
-  #about {
+
+  #experience .experience-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+  }
+  #experience .experience-content .frontend ul li,
+  #experience .experience-content .backend ul li {
+    width: 80%;
+    justify-content: start;
+  }
+
+  #projects .myprojects {
+    width: 90%;
+    margin: auto;
+  }
+  #projects .myprojects .project {
+    display: flex;
+    flex-direction: column;
+  }
+  #projects .myprojects .project .image-container {
+    border-radius: 20px 20px 0 0;
+  }
+
+  #projects .myprojects .project .description {
+    background-color: var(--light-gary);
+    border-radius: 0 0 20px 20px;
+  }
+
+  #projects .myprojects .project .description h1 {
+    margin: 20px 0;
+  }
+
+  #contact .head h1 {
+    font-size: 50px;
+  }
+
+  #contact .contact-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
   }
 }
+
