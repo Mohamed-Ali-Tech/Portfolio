@@ -80,7 +80,6 @@ a {
 #experience,
 #projects {
   margin: 10rem 0;
-  min-height: 100vh;
 }
 /* HARDER START */
 #header {
@@ -128,6 +127,19 @@ a {
   color: var(--text-color);
   border-bottom: 1px solid var(--text-color);
 }
+
+.icons .menu-icon {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+
 /* HEARDER END */
 
 /* MAIN START */
@@ -325,9 +337,10 @@ a {
 #experience .experience-content .frontend ul li,
 #experience .experience-content .backend ul li {
   display: flex;
+
   gap: 2rem;
   margin: 0 auto 10px;
-  width: 250px;
+  width: 90%;
   padding: 5px;
   border-radius: 10px;
   background-color: var(--light-gary);
@@ -483,6 +496,7 @@ a {
 /* FOOTER END */
 
 /* responsive */
+
 @media (max-width: 1300px) {
   .container {
     max-width: 1000px;
@@ -554,10 +568,30 @@ a {
   #main {
     margin-top: 1rem;
   }
-
-  /* #header .nav-bar {
+  #header .nav-bar {
+    position: relative;
+  }
+  #close-menu {
     display: none;
-  } */
+  }
+  #open-menu {
+    display: block;
+  }
+
+  #header .nav-bar .nav-list ul {
+    display: none;
+    position: absolute;
+    background-color: #3d3c3c;
+    flex-direction: column;
+    width: 90vw;
+    height: 300px;
+    padding: 40px 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+  }
+
   #main {
     display: flex;
     flex-direction: column-reverse;
@@ -651,4 +685,3 @@ a {
     margin: auto;
   }
 }
-
